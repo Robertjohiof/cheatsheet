@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If1</title>
+</head>
+<body>
+
+    <!--<h2> taggen bare vises øverst uansett, kan brukes som spørsmål-->        
+    <h2>Stemmer navnet med variabel?</h2>
+    <!--<p> taggen brukes kan bli kalt på, og få forskjellige utskrifter ut i fra variabler osv-->
+    <p id="names"></p>
+    
+    <!--Skriv JavaScript inne i >script> taggen-->
+    <script>
+
+        //cont = konstant variabel
+        const name = "Robert";
+        //let = variabel som kan endres. Under har jeg deklarert variabelen uten verdi, som må kalles på under i if test
+        let utskrift = document.getElementById("names")
+        
+
+        if(name === "Robert") {
+            //Her bestemmes hva som skal skrives ut i <p> taggen. Vi har flyttet .innerHTML ned fra "utskrift"
+           utskrift.innerHTML = `Ja, mitt navn er ${name} Johannessen`
+        } else {
+            utskrift.innerHTML = `Nei, mitt navn er ikke ${name} Johannessen`
+        }
+
+    </script>
+</body>
+</html>
