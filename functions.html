@@ -30,6 +30,7 @@
         printDefaultName()
 
         //Lage en funksjon me e-post som link (template)
+        //Stopper funksjonen ved første "return"
         function createEmailLink(email) {
             if(!email) {
                 return "ikke oppgitt"
@@ -37,6 +38,7 @@
             return `<a href="mailto: ${email}">${email} </a>`
         }
         console.log(createEmailLink("robertjo@hiof.no"))
+        
         document.getElementById("emailcontainer").innerHTML = createEmailLink("robertjo@hiof.no")
     </script>
 </body>
