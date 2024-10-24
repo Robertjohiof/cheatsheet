@@ -52,6 +52,7 @@
             ctx.fill()
             ctx.closePath()
 
+            //Manipulasjon av x og y verdier
             if(circle.x < c.width - circle.r) {
                 circle.x = circle.x + 5
             }
@@ -64,14 +65,13 @@
 
             }
 
-
+            //test utskrift i inspect/console
             console.log("requestAnimationFrame fungerer")
             
             //Rekursivt kall:            
             requestAnimationFrame(frames)
         
     }
-
         //kaller frames()-funksjon første gang:
         frames()
 
